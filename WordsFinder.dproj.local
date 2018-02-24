@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/02/23 21:01:05.853.dproj,C:\Users\Bare7a\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\Bare7a\Documents\RAD Studio\Projects\FindTheWord.dproj</Transaction>
+    <Transaction>2018/02/23 21:01:11.260.pas,C:\Users\Bare7a\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\Bare7a\Documents\RAD Studio\Projects\Main.pas</Transaction>
+    <Transaction>2018/02/23 21:01:11.260.dfm,C:\Users\Bare7a\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\Bare7a\Documents\RAD Studio\Projects\Main.dfm</Transaction>
+    <Transaction>2018/02/23 21:01:26.316.pas,C:\Users\Bare7a\Documents\RAD Studio\Projects\Main.pas=C:\Users\Bare7a\Desktop\FindTheWord\Main.pas</Transaction>
+    <Transaction>2018/02/23 21:01:26.316.dfm,C:\Users\Bare7a\Documents\RAD Studio\Projects\Main.dfm=C:\Users\Bare7a\Desktop\FindTheWord\Main.dfm</Transaction>
+    <Transaction>2018/02/23 21:01:36.543.dproj,C:\Users\Bare7a\Documents\RAD Studio\Projects\FindTheWord.dproj=C:\Users\Bare7a\Desktop\FindTheWord\FindTheWord.dproj</Transaction>
+    <Transaction>2018/02/24 11:47:32.886.dproj,C:\Users\Bare7a\Desktop\FindTheWord\FindTheWord.dproj=C:\Users\Bare7a\Desktop\FindTheWord\WordFinder.dproj</Transaction>
+    <Transaction>2018/02/24 12:15:25.067.dproj,C:\Users\Bare7a\Desktop\FindTheWord\WordFinder.dproj=C:\Users\Bare7a\Desktop\FindTheWord\WordsFinder.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

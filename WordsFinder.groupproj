@@ -1,0 +1,34 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{32769f49-d938-4303-b1a3-d73920ced686}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="WordsFinder.dproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="WordsFinder">
+    <MSBuild Projects="WordsFinder.dproj" Targets="" />
+  </Target>
+  <Target Name="WordsFinder:Clean">
+    <MSBuild Projects="WordsFinder.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="WordsFinder:Make">
+    <MSBuild Projects="WordsFinder.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="WordsFinder" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="WordsFinder:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="WordsFinder:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>
