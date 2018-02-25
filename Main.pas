@@ -24,9 +24,10 @@ type
     Label_WordsFoundNumber: TLabel;
     procedure FormShow(Sender: TObject);
     procedure Button_FindWordClick(Sender: TObject);
-    procedure UpDown_MinCharactersClick(Sender: TObject; Button: TUDBtnType);
-    procedure UpDown_MaxCharactersClick(Sender: TObject; Button: TUDBtnType);
     procedure ComboBox_LanguageSelect(Sender: TObject);
+    procedure UpDown_MaxCharactersClick(Sender: TObject; Button: TUDBtnType);
+    procedure UpDown_MinCharactersClick(Sender: TObject; Button: TUDBtnType);
+    procedure FormKeyPress(Sender: TObject; var Key: Char);
   private
     { Private declarations }
     dictionary, dictionaryList : TStringList;
@@ -96,6 +97,14 @@ begin
   dictionary.LoadFromFile('dictionaries\' + dictionaryList[ComboBox_Language.ItemIndex] + '.txt');;
 end;
 
+procedure TFormMain.FormKeyPress(Sender: TObject; var Key: Char);
+begin
+  if Key = Chr(VK_RETURN) then
+  begin
+    self.Button_FindWord.OnClick(Sender);
+  end;
+end;
+
 procedure TFormMain.FormShow(Sender: TObject);
 var
   I: Integer;
@@ -105,7 +114,6 @@ begin
 
   dictionaryList := ListFiles('dictionaries','*.txt');
 
-
   ComboBox_Language.Items.BeginUpdate;
   ComboBox_Language.Items.Clear;
 
@@ -113,9 +121,11 @@ begin
     ComboBox_Language.Items.Add(dictionaryList[i]);
 
   ComboBox_Language.Items.EndUpdate;
-  
+
   ComboBox_Language.ItemIndex := 0;
   ComboBox_Language.OnSelect(Sender);
+
+  FormMain.KeyPreview := True;
 
   Memo_Words.Clear;
 end;

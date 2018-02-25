@@ -13,6 +13,7 @@ object FormMain: TFormMain
   Font.Style = []
   OldCreateOrder = False
   Position = poDesktopCenter
+  OnKeyPress = FormKeyPress
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
@@ -94,7 +95,7 @@ object FormMain: TFormMain
     Text = '0'
   end
   object UpDown_MinCharacters: TUpDown
-    Left = 110
+    Left = 108
     Top = 59
     Width = 16
     Height = 21
@@ -111,7 +112,7 @@ object FormMain: TFormMain
     Text = '0'
   end
   object UpDown_MaxCharacters: TUpDown
-    Left = 241
+    Left = 239
     Top = 59
     Width = 16
     Height = 21
